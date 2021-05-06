@@ -16,7 +16,29 @@ p{
     color: white;
     font-size: bold;
 }
-
+#wrap {
+overflow:hidden;
+position:relative; /* IE7 needs this */
+}
+#nav {
+float:left;
+position:relative;
+left:50%;
+}
+#nav ul {
+float:left; /* IE6 needs this */
+position:relative;
+left:-50%;
+list-style:none; 
+}
+#nav li {
+float:left;
+}
+#nav a {
+float:left;
+text-decoration:none; 
+padding:0 30px; /* variable width */
+}
 form{ 
   padding: 1em;
   background: tomato;
