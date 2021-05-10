@@ -1,43 +1,36 @@
+* {box-sizing: border-box;}
 
-* {
-  box-sizing: border-box;
-}
 body{
-    background-color: #A9A9A9;
+    background-color: #e6e9e9;
 }
 
-h1{
-    text-align: center;
-    font-size: 26px;
-    color: white;
+.wrapper {
+  display: flex;  
+  flex-flow: row wrap;
+
 }
-p{
-    text-align: center;
-    color: white;
-    font-size: bold;
+
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+  font-family: "candara", Helvetica, Arial;
+  border: 5px solid #DEB887;
+  box-shadow: 5px 10px #FFEFD5;
 }
-#wrap {
-overflow:hidden;
-position:relative; /* IE7 needs this */
+
+.header {
+  background: #3CB371;
+  text-align: center;
 }
-#nav {
-float:left;
-position:relative;
-left:50%;
+
+.footer {
+  background:#3CB371 ;
+  text-align: center;
 }
-#nav ul {
-float:left; /* IE6 needs this */
-position:relative;
-left:-50%;
-list-style:none; 
-}
-#nav li {
-float:left;
-}
-#nav a {
-float:left;
-text-decoration:none; 
-padding:0 30px; /* variable width */
+
+.main {
+  text-align: center;
+  background: #FFEFD5;
 }
 form{ 
   padding: 1em;
@@ -92,3 +85,39 @@ input[type=submit]:hover {
   background-color: #45a049;
     
 }
+
+.aside-1 {
+  background: #FFEFD5;
+}
+
+@media all and (min-width: 600px) {
+  .aside { flex: 1 0 0; }
+}
+
+@media all and (min-width: 800px) {
+  .main    { flex: 3 0px; }
+  .aside-1 { order: 1; } 
+  .main    { order: 2; }
+  .footer  { order: 4; }
+}
+
+body {
+  padding: 2em;
+}
+h3{
+    text-align: center;
+}
+
+nav { text-align:center; }
+nav ul{list-style-type: none; padding: 0;}
+nav ul li { background-color: #3CB371;
+            text-align: center;
+            display: block;
+            margin-bottom: 30px;
+            width: auto;
+            height: 50px;
+            border-radius: 10px;
+            line-height: 30px;
+            padding: 10px 32px;}
+
+nav ul li a {text-decoration: none; font-weight: bold; color:white;}
