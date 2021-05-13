@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 3%;
   padding: 1%%;
@@ -24,9 +28,9 @@ h1,h2,h3{
 .item3{
     width: 100%;
 }
-
+  
 .item4 {
-  height: 50px;
+  height: 100px;
 }
 .grid-container > div {
   background-color: greenyellow;
@@ -53,10 +57,11 @@ nav ul li a {text-decoration: none; font-weight: bold; color:white;}
 form{
     padding: 1em;
     margin-top: 2rem;
-    max-width: 600px;
+    max-width: 800px;
     margin-left: auto;
     margin-right: auto;
 }
+
 form input  {
   margin-bottom: 1rem;
   background: white;
@@ -66,7 +71,7 @@ form input  {
 label {
   padding: 0.5em 1.5em 0.5em 0;
   display: block;
-  text-align: right;
+  text-align: left;
 }
 .myinput {
   width: 100%;
@@ -94,4 +99,3 @@ input[type=submit] {
   width: auto;
   cursor: pointer;
 }
-
