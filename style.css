@@ -25,12 +25,13 @@ body {
 h1,h2,h3{
     color: #696969;
 }
+
 .item3{
     width: 100%;
 }
   
 .item4 {
-  height: 100px;
+  height: 120px;
 }
 .grid-container > div {
   background-color: greenyellow;
