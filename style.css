@@ -14,9 +14,10 @@ body {
 
 .grid-container {
   display: grid;
+  grid-template-columns: 200px Auto 200px;
   grid-template-areas:
     'header header header header header header'
-    'menu main main main main main'
+    'menu main main main  main main'
     'footer footer footer footer footer footer';
   grid-gap: 10px;
   background-color: #808080;
@@ -100,3 +101,4 @@ input[type=submit] {
   width: auto;
   cursor: pointer;
 }
+
